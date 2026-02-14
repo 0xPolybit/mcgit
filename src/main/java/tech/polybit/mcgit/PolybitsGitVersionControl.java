@@ -13,8 +13,6 @@ public class PolybitsGitVersionControl implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
-
 		// Register commands
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
 			McgitCommand.register(dispatcher);
